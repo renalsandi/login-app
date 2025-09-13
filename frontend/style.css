@@ -1,0 +1,118 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Background & centering */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  padding: 1rem; /* biar ada ruang di HP */
+}
+
+/* Container */
+.login-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Title */
+.login-container h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Form elements */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2575fc;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #2575fc;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1a5ed9;
+}
+
+/* Register link */
+.register-link {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.register-link a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/* RESPONSIVE UNTUK HP           */
+/* ============================= */
+@media (max-width: 480px) {
+  body {
+    padding: 0.5rem; /* biar kontainer nggak nempel ke pinggir */
+  }
+
+  .login-container {
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+
+  .login-container h2 {
+    font-size: 1.3rem;
+  }
+
+  input, button {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .register-link {
+    font-size: 0.8rem;
+  }
+}
